@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+body{ /*Tag que inclui o site todo */
+    background: linear-gradient(90deg, rgb(39, 139, 170) 0%, rgb(222, 227, 236) 100%);
+    color: rgba(0, 0, 0, 1); /*Adiciona as letras da cor preta */
+}
+
+div#interface {
+    width: 900px; /*Delimita a interface em 400px*/
+    background: linear-gradient(90deg, rgb(194, 234, 247) 0%, rgb(222, 227, 236) 100%);
+    margin: -20px auto 0px auto; /*formata as margens em -20px , automatico, 0px e automatico*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /*sombreamento na interface*/
+    padding: 10px; /*espaco de 10px no espaço de dentro*/
+}
+
+p{/*Tag que formata apenas os paragrafos */
+    text-align: justify; /*Formata os paragrafos em forma justificada */
+    
+}
+
+iframe{ /*formatação do video externo */
+    width: 100%;/*largura em 100% */
+    padding: 10px;/*padding abaixo em 10px*/
+}
+
+h1{/*formatacao dos h1*/
+    color: #4d2806;/*cores em marrom*/
+}
+h2{/*formatacao dos h2*/
+    color: #4d2806;/*cores em marrom*/
+}
+
+header#cabecalho img#icone { /*Formatação da imagem no header*/
+    position: absolute; /*Posição absoluta, ou seja pode ficar em qualquer lugar do site*/
+    left: 1000px; /*espaço do lado*/
+    top: 60px; /*Topo do site*/
+}
+
+header#cabecalho { /*Formatacao do cabeçalho*/
+    border-bottom: 1px #663406 solid; /*A borda possui 1 px, cor cinza e é solida*/
+    height: 110px; /*Tamanho do cabeçalho*/
+    background: url(imagens/minecraft\ logo.png) no-repeat 0px 50px; /*imagem com a url do css, sem repetir e tamanho variado*/
+}
+
+header#cabecalho h1 { /*Formatação  do titulo do cabeçalho*/
+    font-family: Arial, sans-serif; /*Fonte do paragrafo*/
+    font-size: 30pt; /*Tamanho da fonte*/
+    color: #663406; /*cor da fonte*/
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5); /*sombras*/
+    padding: 20px; /*não possui padding*/
+    margin-bottom: -20px; /*A margem possui -20px*/
+    text-align: center;
+}
+
+header#cabecalho h2 { /*Formatação  do subtitulo do cabeçalho*/
+    font-family: Arial, sans-serif;/*Fonte do paragrafo*/
+    font-size: 15pt;/*Tamanho da fonte*/
+    color: #888888;/*cor da fonte*/
+    padding: 0px; /*não possui padding*/
+    margin-bottom: 0px;/*A margem possui 0px*/
+}
+
+figure.foto-legenda{ /*Tag que formata as figure da classe foto-legenda */
+    position: relative; /*Tag que deixa a imagem em posicao relativa */
+    border: 8px solid rgb(255, 251, 251); /*Borda Branca */
+    box-shadow: 1px 1px 4px black; /*sombreamento da borda */
+}
+
+
+nav#menu{
+    display: block;/*Tag que exibe o menu como um bloco*/
+}
+
+
+nav#menu ul{ /* Formatação da lista do menu*/
+    list-style: none; /* tag que faz os Marcadores sumirem*/
+    text-transform: uppercase; /*Deixa os itens do emnu em maiusculo*/
+    position: absolute; /*Posição que permite ser colocado em qualquer lugar da tela*/
+    top: -20px; /*Posição do topo em -20px*/
+    left: 500px; /*posição da direita em 600px*/
+}
+
+nav#menu li{ /*Formatação dos itens da lista do menu*/
+    display: inline-block; /*tag que formata os itens em uma linha só*/
+    background-color: rgba(54, 138, 6, 0.986); /*Deixa o fundo de cada iten cinza*/
+    padding: 10px; /*Espaço dentro do bloco*/
+    margin: 2px; /*Espaço fora do bloco*/
+    transition: background-color 1s; /*Transição da cor ao passar sobre o item em 1segundo*/
+}
+
+nav#menu li:hover{ /*Tag que aplica efeito sobre o li*/
+    background-color: #52e70d; /*Cor da transição*/
+}
+
+nav#menu h1{ /*Formatação do h1 do menu*/
+    display: none; /*Esconde o h1 */
+}
+
+nav#menu a{ /*Tag que formata os links do menu*/
+    color: #4d2806; /*tag que deixa letra preta*/
+    text-decoration: none; /*Retira o traço dos links*/
+}
+
+nav#menu a:hover{ /*Trancisão nos links*/
+    color: rgb(87, 52, 7); /*Formata a cor branca quando passar por cima*/
+}
+
+section#corpo { /*Formatação da seção do site*/
+    display: block; /*Section do site vira um bloco*/
+    width: 520px; /*largura da pagina*/
+    float: left; /*localiza na esquerda da pagina*/
+    border-right: 1px solid #606060; /*bordaq ue divide as sessoes*/
+    padding-right: 15px ; /*separação de 15px*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+section#corpo p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+table#tabela { /*Formatação da tabela do site*/
+    border: 1px solid #606060; /*borda em volta da tabela solida de 1pxe*/
+    border-spacing: 0px; /*Borda entre os dados*/
+    margin-left: auto;/*Formatação da posicao da tabela*/
+    margin-right: auto;/*Formatação da posicao da tabela*/
+    
+}
+
+table#tabela caption{ /*Formatação do titulo da tabela do site*/
+    text-align: center; /*textos centralizado*/
+    font-weight: bold; /*textos em negrito*/
+    color: #4d2806;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+table#tabela td{ /*Formatação dos td da tabela site*/
+    border: 2px solid #773b0a;/*borda entre a tabela solida de 1pxe*/
+    padding: 8px; /*espacamento dentro da tabela dde 10px*/
+    text-align: center; /*textos centralizado*/
+}
+
+table#tabela td.ce{ /*formatacao de cores da coluna 1 da tabela*/
+    color: rgb(245, 243, 241);/*Formatação das letras, deixando-as branca*/
+    background-color: #18810b;/*Formatação do fundo cinza*/
+    font-weight: bold;/*Letras em negrito*/
+    font-family:Arial, Helvetica, sans-serif;/*Fonte da letra*/
+    font-size: medium;/*tamanho da letra*/
+}
+
+table#tabela td.cd{ /*formatacao de cores da coluna 2 da tabela*/
+    color: rgb(0, 0, 0);/*Formatação das letras, deixando-as branca*/
+    background-color: #aa650a;/*Formatação do fundo cinza*/
+    font-family:Arial, Helvetica, sans-serif;/*Fonte da letra*/
+    font-size: medium;/*tamanho da letra*/
+}
+
+
+aside#lateral { /*Formatação da aside do site*/
+    width: 350px;/*largura da pagina*/
+    float: right; /*localiza na direita da pagina*/
+}
+img{/*Formatação da imagem da segunda pagina*/
+    border: 5px solid #8b580a;/*borda de 5px*/
+    right: 15px;/*localizada a direita em 15px*/
+}
+
+
+footer#rodape{ /*Formatação da footer do site*/
+    clear: both; /*Formatação da seção do site*/
+    border-top: 1px solid #606060; /*cria uma borda*/
+
+}
+
+footer#rodape p{/*Formatação do paragrafo da footer do site*/
+    text-align: center; /*centraliza os paragrafos*/
+}
+
+div#divisao li:hover{/*efeito sobre a lista*/
+    background-color: rgb(34, 102, 7); /*cores em verde*/
+}
+
+p{/*formataco dos paragrafos*/
+    font-family: Arial, Helvetica, sans-serif;/*fonte*/
+    font-size: medium;/*largura*/
+}
+
+li{/*formataco dos li*/
+    font-family: Arial, Helvetica, sans-serif;/*fonte*/
+}
